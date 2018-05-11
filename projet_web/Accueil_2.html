@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Accueil Buy All</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Atma' rel='stylesheet'>
+</head>
+<script type="text/javascript" src="fonction.js"></script>
+<script type="text/javascript" src="objet.js"></script>
+<body onload="init(); taille_page();">
+<div id="bannière">
+    <div id="logo">
+        <img src="Image/logo.png" id="img_logo">
+    </div>
+    <div id="menu" onmouseover="affi_menu(event);" onmouseout="enl_menu()">
+
+    </div>
+    <div id="compte">
+        <a href="./compte.php" class="moitie">
+            <img src="Image/logo_compte.png" class="logo">
+            <div class="desc">Mon compte</div>
+        </a>
+        <a href="./panier.php" class="moitie">
+            <img src="Image/panier.jpg" class="logo">
+            <div class="desc">Mon panier</div>
+        </a>
+    </div>
+</div>
+<div id="ss_menu" onmouseover="affi_menu(event);" onmouseout="">
+
+</div>
+
+<div id="contenu">
+
+    <div class="container">
+        <img src="Image/chaussure.png" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Chaussure</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="Image/vêtement.png" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Vetement</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="Image/accessoire.png" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">accessoire</div>
+        </div>
+    </div>
+</div>
+<div id="indice">
+    <div id="aide" class="resum">
+        <div class="titre2">
+            Aide
+        </div>
+        <div class="ss_titre">
+            Statut de la commande
+        </div>
+        <div class="ss_titre">
+            Expédition et livraison
+        </div>
+        <div class="ss_titre">
+            Retours
+        </div>
+        <div class="ss_titre">
+            Modes de paiement
+        </div>
+        <div class="ss_titre">
+            Information sur le recyclage
+        </div>
+    </div>
+    <div id="apropos" class="resum">
+        <div class="titre2">
+            A propos
+        </div>
+        <div class="ss_titre">
+            Infos
+        </div>
+        <div class="ss_titre">
+            Carrieres
+        </div>
+        <div class="ss_titre">
+            Investisseurs
+        </div>
+    </div>
+    <div id="Contact" class="resum">
+        <div class="titre2">
+            Nous contacter
+        </div>
+        <div class="ss_titre">
+            Mail
+        </div>
+        <div class="ss_titre">
+            Reseaux sociaux
+        </div>
+        <div class="ss_titre">
+            Telephone
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,376 @@
+#img_logo
+{
+    width:42.5%;
+    height: 80px;
+    vertical-align: middle;
+}
+
+.img_logo2
+{
+    width:15%;
+    margin: 10px;
+}
+
+#logo
+{
+    width: 15%;
+    height: 100%;
+    line-height: 88px;
+    vertical-align: middle;
+    margin: auto;
+    float: left;
+}
+
+#menu
+{
+    width: 60%;
+    height: 90px;
+    float: left;
+}
+
+#erreur
+{
+    width: 100%;
+    text-align: center;
+    color: red;
+    display: block;
+    font-size: 15px;
+}
+
+#ss_menu
+{
+    font-size: 20px;
+    padding: 5px;
+    width: 98.7%;
+    height: 98%;
+    background-color: white;
+    top: 90px;
+    position: fixed;
+    background-color: rgba(1, 158, 141, 0.69);
+    border-image: url(Image/border.png) 30 round;
+    border-color: #1C4440;
+    border-style: solid;
+}
+
+#compte
+{
+    width: 25%;
+    height: 90px;
+    float: left;
+    cursor: pointer;
+}
+
+#bannière
+{
+    position: static;
+    width: 99%;
+    height: 90px;
+    line-height: 90px;
+    background-color: #019E8D;
+    border-style: solid;
+    padding-left: 7px;
+    border-top-width: 0px;
+    border-bottom-width: 5px;
+    border-image: url(Image/border.png) 30 round;
+    border-color: #1C4440;
+}
+
+#contenu
+{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    height: 140%;
+        background-color: white;
+}
+
+
+
+#chaussure
+{
+    text-align: center;
+}
+
+#accessoire
+{
+    text-align: center;
+}
+
+#vetement
+{
+    text-align: center;
+}
+
+#indice
+{
+    top: 140%;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 97.5%;
+    padding-left: 35px;
+}
+
+#apropos
+{
+    position: relative;
+}
+
+#conec
+{
+    border-image: url(Image/border.png) 30 round;
+    border-color: #1C4440;
+    border-style: solid;
+    top: 7%;
+    left: 31%;
+    width: 38%;
+    height: 85%;
+    position: fixed;
+    background-color: #019E8D;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+#inscription
+{
+    font-size:16px;
+    border-image: url(Image/border.png) 30 round;
+    border-color: #1C4440;
+    border-style: solid;
+    top: 5%;
+    left: 31%;
+    width: 38%;
+    height: 88%;
+    position: fixed;
+    background-color: #019E8D;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+#conecbis
+{
+    border-image: url(Image/border.png) 30 round;
+    border-color: #1C4440;
+    border-style: solid;
+    top: 7%;
+    left: 31%;
+    width: 38%;
+    height: 85%;
+    position: fixed;
+    background-color: #019E8D;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+#ferm2
+{
+    float: right;
+    width: 6%;
+    height: auto;
+    cursor: pointer;
+}
+
+#ferm1
+{
+    float: right;
+    width: 6%;
+    height: auto;
+    cursor: pointer;
+}
+
+#autre
+{
+
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.bouton
+{
+    width:100%;
+    height: 100%;
+}
+
+.quart
+{
+    width: 25%;
+    float: left;
+}
+
+.ecrit
+{
+    width: 75%;
+}
+
+.bout_inscription
+{
+    font-family: 'Atma';
+    font-size: 20px;
+    color: white;
+    background-color: #4dacac;
+    margin: 0 auto;
+    height: 50px;
+    width: 60%;
+}
+
+.bout_connec
+{
+    font-family: 'Atma';
+    font-size: 20px;
+    color: white;
+    background-color: #4dacac;
+    margin: 0 auto;
+    height: 50px;
+    width: 60%;
+}
+
+.ss_titre
+{
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.ss_titre:hover
+{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.titre
+{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.titre2
+{
+    font-weight: bold;
+}
+
+.resum
+{
+    float: left;
+    margin: 20px;
+    width: 15%;
+    background-color: black;
+}
+
+.interieur
+{
+    font-size: 20px;
+    font-family: 'Atma';
+    height: 90px;
+    float: left;
+    text-align: center;
+    transition: background-color 1s;
+}
+
+.interieur:hover
+{
+    background-color: #0B9C97;
+    border: 2px solid #002625;
+    border-radius:4px;
+}
+
+
+.photo
+{
+    width: 100%;
+    height: auto;
+}
+
+.desc
+{
+    font-size: 20px;
+    display: inline;
+    margin: 2%;
+}
+
+.centrer
+{
+    text-align: center;
+}
+
+.container
+{
+    margin-left: 5% ;
+    margin-right: auto;
+    margin-top:5%;
+    position: relative;
+    width: 25%;
+    float: left;
+    border: 10px solid transparent;
+    border-image: url(Image/border.png) 30 round;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #019E8D;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.item
+{
+    padding-left: 25%;
+}
+
+.text {
+     font-family: 'Atma';
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logo
+{
+    width:12.5%;
+    height: 40px;
+    vertical-align: middle;
+    display: inline;
+}
+
+.moitie
+{
+    text-decoration: none;
+    width: 50%;
+}
+
+body
+{
+    font-size: 18px;
+    font-family: 'Atma';
+    margin:0;
+    background-color: #0B9C97;
+}
+
+a
+{
+    color: black;
+}

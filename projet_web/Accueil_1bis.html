@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Accueil Buy All</title>
+    <link rel="stylesheet" type="text/css" href="style_1bis.css" />
+    <link href='https://fonts.googleapis.com/css?family=Atma' rel='stylesheet'>
+</head>
+<script type="text/javascript" src="fonction_1bis.js"></script>
+<script type="text/javascript" src="objet.js"></script>
+<body onload="init(); taille_page();">
+<div id="bannière">
+    <div id="logo">
+        <img src="Image/logo.png" id="img_logo">
+    </div>
+    <div id="menu" onmouseover="affi_menu(event);" onmouseout="enl_menu()">
+
+    </div>
+    <div id="compte" onclick="ouverture(this);">
+        <img src="Image/logo_compte.png" class="logo">
+        <div class="desc">Se connecter / S'inscrire</div>
+    </div>
+</div>
+<div id="ss_menu" onmouseover="affi_menu(event);" onmouseout="">
+
+</div>
+
+<div id="contenu">
+
+    <div class="container">
+        <img src="Image/chaussure.png" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Chaussure</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="Image/vêtement.png" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Vetement</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="Image/accessoire.png" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">accessoire</div>
+        </div>
+    </div>
+</div>
+<div id="indice">
+    <div id="aide" class="resum">
+        <div class="titre2">
+            Aide
+        </div>
+        <div class="ss_titre">
+            Statut de la commande
+        </div>
+        <div class="ss_titre">
+            Expédition et livraison
+        </div>
+        <div class="ss_titre">
+            Retours
+        </div>
+        <div class="ss_titre">
+            Modes de paiement
+        </div>
+        <div class="ss_titre">
+            Information sur le recyclage
+        </div>
+    </div>
+    <div id="apropos" class="resum">
+        <div class="titre2">
+            A propos
+        </div>
+        <div class="ss_titre">
+            Infos
+        </div>
+        <div class="ss_titre">
+            Carrieres
+        </div>
+        <div class="ss_titre">
+            Investisseurs
+        </div>
+    </div>
+    <div id="Contact" class="resum">
+        <div class="titre2">
+            Nous contacter
+        </div>
+        <div class="ss_titre">
+            Mail
+        </div>
+        <div class="ss_titre">
+            Reseaux sociaux
+        </div>
+        <div class="ss_titre">
+            Telephone
+        </div>
+    </div>
+</div>
+<div id="conec">
+    <img src="Image/fermer.png" id="ferm1" onclick="fermeture(this);">
+    <br><br>
+    <div class="centrer">
+        <img src="Image/logo.png" class="img_logo2">
+        <br>
+        <div class="message">
+            Bienvenu sur Buy All
+            <br>
+            Connectez vous
+        </div>
+    </div>
+    <br>
+    <div id="erreur">
+        Votre mot de passe ne correspond avec l'adresse mail que vous avez fourni !
+    </div>
+    <form action="connection.php" method="get">
+        <label for="mail1">Mail:</label>
+        <br>
+        <input value="" id="mail1" name="mail" class="ecrit">
+        <br><br>
+        <label for="password1">Mot de passe:</label>
+        <br>
+        <input value="" type="password" id="password1" name="pass" class="ecrit" onkeyup="cacher();">
+        <br>
+        <input type="checkbox" id="aff_pass" value="on" onclick="cacher();"/>
+        <label for="aff_pass">Afficher votre mot de passe</label>
+        <br><br>
+        <div class="centrer">
+            <button class="bout_connec" onclick="erreur();">
+                Se connecter
+            </button>
+            <div id="autre" onclick="ouverture(this)">
+                Si vous n'avez pas de compte, veuillez vous inscrire ici !
+            </div>
+        </div>
+    </form>
+</div>
+<div id="inscription">
+    <img src="Image/fermer.png" id="ferm2" onclick="fermeture(this);">
+    <br><br>
+    <div class="centrer">
+        <img src="Image/logo.png" class="img_logo2">
+        <br>
+        <div class="message">
+            Bienvenu sur Buy All
+            <br>
+            Inscrivez vous
+        </div>
+    </div>
+    <br>
+    <form action="inscription.php" method="get">
+        <label for="mail2">Mail:</label>
+        <br>
+        <input value="" id="mail2" name="mail" class="ecrit">
+        <br>
+        <label for="password2">Mot de passe:</label>
+        <br>
+        <input value="" type="password" id="password2" name="pass" class="ecrit">
+        <br>
+        <label for="nom">Nom:</label>
+        <br>
+        <input value="" id="nom" name="nom" class="ecrit">
+        <br>
+        <label for="prenom">Prenom:</label>
+        <br>
+        <input value="" type="text" id="prenom" name="prenom" class="ecrit">
+        <br>
+        <label for>Date de Naissance:</label>
+        <br>
+        <div id="date_naissance">
+            <select id="date_j" name="date_j">
+            </select>
+            <select id="date_m" name="date_m">
+            </select>
+            <select id="date_annee" name="date_annee">
+            </select>
+        </div>
+        <input type="checkbox" id="news" name="newsletter" value="newsletter"/>
+        <label for="news">S'inscrire à la newsletter</label>
+        <br>
+        <div class="centrer">
+            <button type="submit" name="inscription" class="bout_inscription">S'inscrire</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

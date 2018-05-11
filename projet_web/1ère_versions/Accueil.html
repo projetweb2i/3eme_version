@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Accueil Buy All</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<script type="text/javascript" src="fonction.js"></script>
+<script type="text/javascript" src="objet.js"></script>
+<body onload="init(); taille_page();">
+    <div id="bannière">
+        <div id="logo">
+            <img src="Image/logo.png" id="img_logo">
+        </div>
+        <div id="menu" onmouseover="affi_menu(event);" onmouseout="enl_menu()">
+
+        </div>
+        <div id="compte" onclick="ouverture(this);">
+            <img src="Image/logo_compte.png" id="img_compte">
+            <div class="desc">Se connecter / S'inscrire</div>
+        </div>
+    </div>
+    <div id="ss_menu">
+
+    </div>
+    <div id="contenu" onmouseover="grandir(event);">
+        <div id="chaussure" class="photo_presentation" onmouseout="dezoom();">
+            <img src="Image/chaussure.png" class="photo" id="chaussurep">
+            <div class="desc2" id="chaussured">Chaussure</div>
+        </div>
+        <div id="vetement" class="photo_presentation" onmouseout="dezoom();">
+            <img src="Image/vêtement.png" class="photo" id="vetementp">
+            <div class="desc2" id="vetementd">Vetement</div>
+        </div>
+        <div id="accessoire" class="photo_presentation" onmouseout="dezoom();">
+            <img src="Image/accessoire.png" class="photo" id="accessoirep">
+            <div class="desc2" id="accessoired">Accessoire</div>
+        </div>
+    </div>
+    <div id="indice">
+        <div id="aide" class="resum">
+            <div class="titre">
+                Aide
+            </div>
+            <div class="ss_titre">
+                Statut de la commande
+            </div>
+            <div class="ss_titre">
+                Expédition et livraison
+            </div>
+            <div class="ss_titre">
+                Retours
+            </div>
+            <div class="ss_titre">
+                Modes de paiement
+            </div>
+            <div class="ss_titre">
+                Information sur le recyclage
+            </div>
+        </div>
+        <div id="apropos" class="resum">
+            <div class="titre">
+                A propos
+            </div>
+            <div class="ss_titre">
+                Infos
+            </div>
+            <div class="ss_titre">
+                Carrieres
+            </div>
+            <div class="ss_titre">
+                Investisseurs
+            </div>
+        </div>
+        <div id="Contact" class="resum">
+            <div class="titre">
+                Nous contacter
+            </div>
+            <div class="ss_titre">
+                Mail
+            </div>
+            <div class="ss_titre">
+                Reseaux sociaux
+            </div>
+            <div class="ss_titre">
+                Telephone
+            </div>
+        </div>
+    </div>
+    <div id="conec">
+        <img src="Image/fermer.png" id="ferm1" onclick="fermeture(this);">
+        <br><br>
+        <div class="centrer">
+            <img src="Image/logo.png" class="img_logo2">
+            <br>
+            <div class="message">
+                Bienvenu sur Buy All
+                <br>
+                Connectez vous
+            </div>
+        </div>
+        <br><br>
+        <label for="mail1">Mail:</label>
+        <br>
+        <input value="" id="mail1">
+        <br><br><br>
+        <label for="password1">Mot de passe:</label>
+        <br>
+        <input value="" type="password" id="password1">
+        <br>
+        <input type="checkbox" id="aff_pass" value="on"/>
+        <label for="aff_pass">Afficher votre mot de passe</label>
+        <br><br>
+        <div class="centrer">
+            <div class="bout_connec">
+                Connection
+            </div>
+            <div id="autre" onclick="ouverture(this)">
+                Si vous n'avez pas de compte, veuillez vous inscrire ici !
+            </div>
+        </div>
+    </div>
+    <div id="inscription">
+        <img src="Image/fermer.png" id="ferm2" onclick="fermeture(this);">
+        <br><br>
+        <div class="centrer">
+            <img src="Image/logo.png" class="img_logo2">
+            <br>
+            <div class="message">
+                Bienvenu sur Buy All
+                <br>
+                Inscrivez vous
+            </div>
+        </div>
+        <br>
+        <form>
+            <label for="mail2">Mail:</label>
+            <br>
+            <input value="" id="mail2">
+            <br>
+            <label for="password2">Mot de passe:</label>
+            <br>
+            <input value="" type="password" id="password2">
+            <br>
+            <label for="nom">Nom:</label>
+            <br>
+            <input value="" id="nom">
+            <br>
+            <label for="prenom">Prenom:</label>
+            <br>
+            <input value="" type="password" id="prenom">
+            <br>
+            <label for>Date de Naissance:</label>
+            <br>
+            <div id="date_naissance">
+                <select id="date_j">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+                <select id="date_m">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                <select id="date_annee">
+                    <option>1949</option>
+                    <option>1950</option>
+                    <option>1951</option>
+                    <option>1952</option>
+                    <option>1953</option>
+                    <option>1954</option>
+                    <option>1955</option>
+                    <option>1956</option>
+                    <option>1957</option>
+                    <option>1958</option>
+                    <option>1959</option>
+                    <option>1960</option>
+                    <option>1961</option>
+                    <option>1962</option>
+                    <option>1963</option>
+                    <option>1964</option>
+                    <option>1965</option>
+                    <option>1966</option>
+                    <option>1967</option>
+                    <option>1968</option>
+                    <option>1969</option>
+                    <option>1970</option>
+                    <option>1971</option>
+                    <option>1972</option>
+                    <option>1973</option>
+                    <option>1974</option>
+                    <option>1975</option>
+                    <option>1976</option>
+                    <option>1977</option>
+                    <option>1978</option>
+                    <option>1979</option>
+                    <option>1980</option>
+                    <option>1981</option>
+                    <option>1982</option>
+                    <option>1983</option>
+                    <option>1984</option>
+                    <option>1985</option>
+                    <option>1986</option>
+                    <option>1987</option>
+                    <option>1988</option>
+                    <option>1989</option>
+                    <option>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>1993</option>
+                    <option>1994</option>
+                    <option>1995</option>
+                    <option>1996</option>
+                    <option>1997</option>
+                    <option>1998</option>
+                    <option>1999</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                </select>
+            </div>
+        </form>
+        <input type="checkbox" id="news" value="on"/>
+        <label for="news">S'inscrire à la newsletter</label>
+        <br>
+        <div class="centrer">
+            <div class="bout_connec">
+                Inscription
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
