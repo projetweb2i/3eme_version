@@ -251,6 +251,7 @@
 {
     font-size: 20px;
     font-family: 'Atma';
+    cursor: pointer;
     height: 90px;
     float: left;
     text-align: center;
