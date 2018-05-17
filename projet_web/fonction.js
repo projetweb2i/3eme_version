@@ -54,7 +54,7 @@ function affi_menu(obj)
             text1 = "<div id=" + ss_menu_homme.type[j].nom + " class='quart'><div class='titre'>" + ss_menu_homme.type[j].nom + "</div><div class='item'>";
             for(k=0;k<ss_menu_homme.type[j].variete.length;k++)
             {
-                text2 ="<br>"+ss_menu_homme.type[j].variete[k].mat;
+                text2 ="<br><button class='bout_ssmenu'>"+ss_menu_homme.type[j].variete[k].mat+'</button>';
                 text1+=text2;
             }
             text1+="</div></div>";
@@ -83,7 +83,7 @@ function affi_menu(obj)
             text1 = "<div id=" + ss_menu_femme.type[j].nom + " class='quart'><div class='titre'>" + ss_menu_femme.type[j].nom + "</div><div class='item'>";
             for(k=0;k<ss_menu_femme.type[j].variete.length;k++)
             {
-                text2 ="<br>"+ss_menu_femme.type[j].variete[k].mat;
+                text2 ="<br><button class='bout_ssmenu'>"+ss_menu_femme.type[j].variete[k].mat+'</button>';
                 text1+=text2;
             }
             text1+="</div></div>";
@@ -112,7 +112,7 @@ function affi_menu(obj)
             text1 = "<div id=" + ss_menu_enfant.type[j].nom +" class='quart'><div class='titre'>" + ss_menu_enfant.type[j].nom + "</div><div class='item'>";
             for(k=0;k<ss_menu_enfant.type[j].variete.length;k++)
             {
-                text2 ="<br>"+ss_menu_enfant.type[j].variete[k].mat;
+                text2 ="<br><button class='bout_ssmenu'>"+ss_menu_enfant.type[j].variete[k].mat+'</button>';
                 text1+=text2;
             }
             text1+="</div></div>";
@@ -141,7 +141,7 @@ function affi_menu(obj)
             text1 = "<div id=" + ss_menu_mixte.type[j].nom +" class='quart'><div class='titre'>" + ss_menu_mixte.type[j].nom + "</div><div class='item'>";
             for(k=0;k<ss_menu_mixte.type[j].variete.length;k++)
             {
-                text2 ="<br>"+ss_menu_mixte.type[j].variete[k].mat;
+                text2 ="<br><button class='bout_ssmenu'>"+ss_menu_mixte.type[j].variete[k].mat+'</button>';
                 text1+=text2;
             }
             text1+="</div></div>";
@@ -188,7 +188,11 @@ function ouverture(obj)
         banniere.style.opacity="0.2";
         indice.style.opacity="0.2";
         contenu.style.opacity="0.2";
+        ss_menu.style.display="none";
+        indice.style.display="block";
+        contenu.style.display="block";
         test=1
+
     }
     if (obj.id === "autre")
     {

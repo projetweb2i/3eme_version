@@ -1,7 +1,7 @@
 #img_logo
 {
     width:42.5%;
-    height: 80px;
+
     vertical-align: middle;
 }
 
@@ -171,7 +171,16 @@
     width: 6%;
     height: auto;
     cursor: pointer;
+    transition: width 1s;
 }
+
+
+#ferm2:hover
+{
+    width: 8%;
+}
+
+
 
 #ferm1
 {
@@ -179,13 +188,31 @@
     width: 6%;
     height: auto;
     cursor: pointer;
+      transition: width 1s;
 }
+
+
+#ferm1:hover
+{
+    width: 8%;
+}
+
+
+
+
 
 #autre
 {
 
     font-size: 10px;
     cursor: pointer;
+}
+
+#autre:hover
+{
+    text-decoration:underline;
+
+
 }
 
 .bouton
@@ -205,6 +232,8 @@
     width: 75%;
 }
 
+
+/*
 .bout_inscription
 {
     font-family: 'Atma';
@@ -216,8 +245,28 @@
     width: 60%;
 }
 
-.bout_connec
+*/
+
+
+.bout_ssmenu
 {
+    background-color:#019E8D;
+   font-family: 'Atma';
+       font-size: 80%;
+   color:black;
+ border:none;
+ text-align:center;
+
+}
+
+.bout_ssmenu:hover
+{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+
+.bout_connec {
     font-family: 'Atma';
     font-size: 20px;
     color: white;
@@ -225,7 +274,45 @@
     margin: 0 auto;
     height: 50px;
     width: 60%;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius:5px;
+
+  border:none;
 }
+
+.bout_connec span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bout_connec span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bout_connec:hover span {
+  padding-right: 25px;
+}
+
+.bout_connec:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+
 
 .ss_titre
 {
@@ -268,14 +355,14 @@
     height: 90px;
     float: left;
     text-align: center;
-    transition: background-color 1s;
 }
 
 .interieur:hover
 {
     background-color: #0B9C97;
-    border: 2px solid #002625;
-    border-radius:4px;
+    border-left: 2px solid #002625;
+    border-right: 2px solid #002625;
+
 }
 
 
@@ -290,6 +377,13 @@
     font-size: 20px;
     display: inline;
     margin: 2%;
+}
+
+
+
+.desc:hover
+{
+    text-decoration:underline;
 }
 
 .centrer
